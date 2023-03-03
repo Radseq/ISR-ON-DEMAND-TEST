@@ -1,0 +1,137 @@
+.footer {
+	min-height: 100px;
+	display: flex;
+}
+
+.main {
+	padding: 10px;
+	width: 70%;
+}
+
+.side {
+	width: 30%;
+	padding: 10px;
+}
+
+.side > .icon {
+	padding: 10px 0;
+}
+
+.icon {
+	display: flex;
+}
+
+.icon img {
+	margin-right: 5px;
+}
+
+.icon a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin: auto 0;
+}
+
+.newsLetter form {
+	display: flex;
+}
+
+.newsLetter button {
+	border: 2px solid rgb(110, 110, 110);
+	padding: 6px 24px;
+	font-size: 1.15em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: rgb(110, 110, 110);
+	background-color: white;
+	transition: all 0.25s ease-in-out;
+	border-radius: 10px;
+}
+
+.newsLetter button:hover {
+	background-color: rgb(110, 110, 110);
+	border-color: rgb(110, 110, 110);
+	color: white;
+}
+
+.newsLetter button:active {
+	background-color: rgb(110, 110, 110);
+	border-color: rgb(110, 110, 110);
+	color: white;
+	box-shadow: none;
+}
+
+.newsLetterMessage {
+}
+
+.success {
+	color: green;
+}
+
+.fail {
+	color: red;
+}
+
+.newsLetter p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 300px;
+	font-family: Lato, sans-serif;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.newsLetter span {
+	font-size: 1.6em;
+	color: rgb(112 112 112);
+}
+
+.newsLetter input {
+	height: 35px;
+	width: 300px;
+}
+
+.daysHours {
+	display: flex;
+	justify-content: space-around;
+	min-width: 230px;
+	padding-left: 40px;
+	width: 50%;
+}
+
+.daysHours > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact > span {
+	font-size: 1.4em;
+	margin-bottom: 20px;
+	display: block;
+	font-weight: bold;
+	font-family: Lato, sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+	.newsLetter form {
+		display: block;
+	}
+
+	.main {
+		padding: 10px;
+		width: 50%;
+	}
+
+	.side {
+		width: 50%;
+		padding: 10px;
+	}
+
+	.daysHours {
+		padding-left: 10px;
+	}
+
+	.newsLetter input {
+		max-width: 90%;
+		padding-right: 0;
+	}
+}
